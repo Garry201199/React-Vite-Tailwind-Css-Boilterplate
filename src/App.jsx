@@ -1,18 +1,35 @@
-import GarryLogo from '../public/Garry.svg'
-function App() {
+import { Billing, Buisness, CardDeal, Clients, CTA, Footer, Hero, Navbar, Stats, Testimonials } from './comp'
+import styles from './styles'
+
+function App() { 
   return (
-    <div className="bg-black gap-4 w-full flex-col h-screen flex items-center justify-center ">
-      <div className="  ">
-        <img src={GarryLogo} className=' relative z-20' alt="GarryLogo" ></img>
-
-        <div className="absolute inset-0 blur-lg opacity-20  w-full h-full bg-gradient-to-tr from-[#4093e6] via-[#71cff4] to-[#2ef66d] "></div>
-        
+    <div className="bg-[#202020] overflow-hidden text-white w-full ">
+      <div className={`${ styles.flexCenter }  ${styles.paddingX} `}>
+        <div className={`${styles.boxwidth}`}>
+          <Navbar />
+        </div>
       </div>
-      <p className="text-4xl text-white font-thin font-raleway">
-        Welcome to Boilterplate of React + Vite + Tailwindcss 
-        <span>- made by Garry</span>
-        </p>  
 
+      <div className={`${styles.flexStart} bg-[#202020] `}>
+        <div className={`${styles.boxwidth}`}>
+          <Hero/>
+        </div>
+      </div>
+       
+
+       <div className={`${styles.paddingX} bg-[#202020] ${styles.flexStart}  `}>
+        <div className={`${styles.boxwidth}`}>
+
+         <Stats/>
+         <Buisness/>
+         <CardDeal/>
+         <Billing/>
+         <Testimonials/>
+         <Clients/>
+         <CTA />
+         <Footer/>
+        </div>
+       </div>
     </div>
   )
 }

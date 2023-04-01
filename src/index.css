@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+@layer base {
+  @apply 
+  .trapezoid {
+    height: 0;
+    width: 150px;
+    /* border-bottom: 100px solid #32557f;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent; 
+  
+*/
