@@ -8,12 +8,7 @@ module.exports = {
     fontFamily: {
       raleway : ['Raleway', 'sans-serif'],
     },
-    extend: {
-      backgroundImage: {
-        'hero-pattern': 'url(./src/Assets/GameBg.jpg)',
-       
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
